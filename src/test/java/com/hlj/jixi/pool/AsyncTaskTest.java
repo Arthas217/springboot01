@@ -5,6 +5,9 @@ import org.junit.Test;
 import org.springframework.util.concurrent.ListenableFuture;
 import java.util.concurrent.ExecutionException;
 
+/**
+ * 测试springboot中线程池使用
+ */
 public class AsyncTaskTest {
 
     AsyncTask asyncTask;
@@ -19,7 +22,6 @@ public class AsyncTaskTest {
         for (int i = 0; i < 10; i++) {
             asyncTask.doTask1(i);
             asyncTask.doTask2(i);
-
             ListenableFuture<String> listenableFuture = asyncTask.doTask3(i);
             System.out.println(listenableFuture.get());
         }
