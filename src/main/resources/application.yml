@@ -1,0 +1,31 @@
+server:
+  port: 8081
+
+person:
+  lastName: 左哈哈
+  age: 18
+  boss: false
+  birth: 2017/12/12
+  maps: {k1: v1,k2: 12}
+  lists:
+    - ${person.lastName}
+    - zhaoliu
+  dog:
+      age: ${random.int}
+      name: ${person.name:"default"}_dog
+
+#spring:
+#  profiles:
+#    active: dev
+
+---
+server:
+  port: 8082
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8083
+spring:
+  profiles: prod
