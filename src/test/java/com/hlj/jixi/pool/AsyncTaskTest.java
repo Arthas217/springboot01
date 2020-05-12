@@ -3,7 +3,6 @@ package com.hlj.jixi.pool;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.util.concurrent.ListenableFuture;
-
 import java.util.concurrent.ExecutionException;
 
 public class AsyncTaskTest {
