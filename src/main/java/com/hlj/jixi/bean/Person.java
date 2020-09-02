@@ -1,9 +1,11 @@
 package com.hlj.jixi.bean;
 
+import org.hibernate.validator.constraints.Email;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
 import java.util.Date;
 import java.util.List;
@@ -11,13 +13,17 @@ import java.util.Map;
 
 // 组件
 @Component
-// 指定自定义配置文件
+// 指定自定义配置文件(如果有yml配置文件在此注解失效)
 @PropertySource(value = "classpath:person.properties")
 // 配置文件和person bean关联
 @ConfigurationProperties(prefix = "person")
+// 对象属性校验
+@Validated
 public class Person {
 
 //    @Value("${person.lastName}")
+    // 必须是邮件格式
+    @Email
     private String lastName;
 //    @Value("#{${person.age}*2}")
     private Integer age;

@@ -2,7 +2,7 @@ server:
   port: 8081
 
 person:
-  lastName: 左哈哈
+  lastName: 左哈哈@qq.com
   age: 18
   boss: false
   birth: 2017/12/12
