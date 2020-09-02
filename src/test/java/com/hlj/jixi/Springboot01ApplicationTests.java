@@ -18,6 +18,9 @@ public class Springboot01ApplicationTests {
     @Autowired
     Person person;
 
+    /**
+     * 测试通过配置文件读取对象person值
+     */
     @Test
     public void testPerson() {
         System.out.println(person);
@@ -27,8 +30,12 @@ public class Springboot01ApplicationTests {
     @Autowired
     ApplicationContext context;
 
+    /**
+     * 测试向容器添加helloService组件
+     */
     @Test
     public void testService(){
+        // 默认过去方法的名称作为 id= helloService
         boolean helloservice = context.containsBean("helloService");
         System.out.println(helloservice);
     }
