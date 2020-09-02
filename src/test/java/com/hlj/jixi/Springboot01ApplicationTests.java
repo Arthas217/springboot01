@@ -40,16 +40,18 @@ public class Springboot01ApplicationTests {
         System.out.println(helloservice);
     }
 
+    // 获取记录器logger
+    Logger logger = LoggerFactory.getLogger(getClass());
 
     @Test
     public void testLog(){
-        Logger logger = LoggerFactory.getLogger(getClass());
-        //日志级别  级别由低到高
-        logger.trace("这是trace");
-        logger.debug("这是debug");
-        logger.info("这是info");
-        logger.warn("这是warn");
-        logger.error("这是error");
+        // 日志级别由低到高
+        logger.trace("这是trace---------------------------------");
+        logger.debug("这是debug---------------------------------");
+        // spring 默认级别
+        logger.info("这是info---------------------------------");
+        logger.warn("这是warn---------------------------------");
+        logger.error("这是error---------------------------------");
     }
 
 }
