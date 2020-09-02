@@ -15,7 +15,7 @@ public class HelloWorld {
 
     @Value("${person.last-name}")
     private String name;
-    // 选取配置文件person.properties 且访问http://localhost:8082/hello2
+    // 选取配置文件person.properties 且访问http://localhost:8088/hello2
     @RequestMapping("/hello2")
     public String hello2(){
         return "Hello world" + name;

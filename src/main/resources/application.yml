@@ -12,7 +12,7 @@ person:
     - zhaoliu
   dog:
       age: ${random.int}
-      name: ${person.name:"default"}_dog
+      name: ${person.name:"defaultvalue"}_dog
 
 #spring:
 #  profiles:
@@ -24,6 +24,7 @@ server:
 spring:
   profiles: dev
 
+debug: true
 ---
 server:
   port: 8083
