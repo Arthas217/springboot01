@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 public class HelloServiceConfig {
 
     @Bean
-    public HelloService helloService(){
+    public HelloService helloService01(){
         System.out.println("配置类 注解方式给容器添加组件");
         return new HelloService();
     }

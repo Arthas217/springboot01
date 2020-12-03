@@ -37,10 +37,12 @@ public class Springboot01ApplicationTests {
     public void testService(){
         // 默认过去方法的名称作为 id= helloService
         boolean helloservice = context.containsBean("helloService");
+        boolean helloservice01 = context.containsBean("helloService01");
         System.out.println(helloservice);
+        System.out.println(helloservice01);
     }
 
-    // 获取记录器logger
+    //
     Logger logger = LoggerFactory.getLogger(getClass());
 
     @Test

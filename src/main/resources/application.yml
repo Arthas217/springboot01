@@ -1,6 +1,5 @@
 server:
   port: 8081
-
 person:
   lastName: 左哈哈@qq.com
   age: 18
@@ -17,16 +16,17 @@ person:
 #spring:
 #  profiles:
 #    active: dev
-
+#自动配置时使用
+debug: false
 ---
 server:
   port: 8082
 spring:
   profiles: dev
-
-debug: true
+debug: false
 ---
 server:
   port: 8083
 spring:
   profiles: prod
+debug: false

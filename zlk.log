@@ -1,0 +1,23 @@
+2020-12-03 17:04:00.385  INFO 67202 --- [main] c.hlj.jixi.Springboot01ApplicationTests  : Starting Springboot01ApplicationTests on localhost with PID 67202 (started by zuocheng in /Users/zuocheng/IdeaProjects/springboot01)
+2020-12-03 17:04:00.386  INFO 67202 --- [main] c.hlj.jixi.Springboot01ApplicationTests  : No active profile set, falling back to default profiles: default
+2020-12-03 17:04:00.426  INFO 67202 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@12aba8be: startup date [Thu Dec 03 17:04:00 CST 2020]; root of context hierarchy
+2020-12-03 17:04:00.859  INFO 67202 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [beans.xml]
+2020-12-03 17:04:01.414  INFO 67202 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'taskThreadPoolConfig' of type [com.hlj.jixi.pool.TaskThreadPoolConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-03 17:04:01.415  INFO 67202 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'nativeAsyncTaskExecutePool' of type [com.hlj.jixi.pool.NativeAsyncTaskExecutePool$$EnhancerBySpringCGLIB$$8f7ecb69] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-03 17:04:01.419  INFO 67202 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2020-12-03 17:04:01.680  INFO 67202 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2020-12-03 17:04:01.686  INFO 67202 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'myTaskAsyncPool'
+2020-12-03 17:04:02.313  INFO 67202 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@12aba8be: startup date [Thu Dec 03 17:04:00 CST 2020]; root of context hierarchy
+2020-12-03 17:04:02.365  INFO 67202 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello2]}" onto public java.lang.String com.hlj.jixi.control.HelloWorld.hello2()
+2020-12-03 17:04:02.365  INFO 67202 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.hlj.jixi.control.HelloWorld.hello()
+2020-12-03 17:04:02.367  INFO 67202 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-12-03 17:04:02.367  INFO 67202 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-12-03 17:04:02.388  INFO 67202 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-03 17:04:02.389  INFO 67202 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-03 17:04:02.424  INFO 67202 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-12-03 17:04:02.549  INFO 67202 --- [main] c.hlj.jixi.Springboot01ApplicationTests  : Started Springboot01ApplicationTests in 2.503 seconds (JVM running for 3.136)
+2020-12-03 17:04:02.615  INFO 67202 --- [main] c.hlj.jixi.Springboot01ApplicationTests  : 这是info---------------------------------
+2020-12-03 17:04:02.615  WARN 67202 --- [main] c.hlj.jixi.Springboot01ApplicationTests  : 这是warn---------------------------------
+2020-12-03 17:04:02.615 ERROR 67202 --- [main] c.hlj.jixi.Springboot01ApplicationTests  : 这是error---------------------------------
+2020-12-03 17:04:02.626  INFO 67202 --- [Thread-2] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@12aba8be: startup date [Thu Dec 03 17:04:00 CST 2020]; root of context hierarchy
+2020-12-03 17:04:02.629  INFO 67202 --- [Thread-2] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'myTaskAsyncPool'

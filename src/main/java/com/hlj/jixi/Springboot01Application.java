@@ -1,5 +1,8 @@
 package com.hlj.jixi;
 
+import com.hlj.jixi.control.HelloWorld;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
@@ -7,7 +10,7 @@ import org.springframework.context.annotation.ImportResource;
 
 // 一种方式 通过xml+@ImportResource（导入spring的配置文件）方式 向容器中添加组件（不是很好方式）
 // 另一种springboot推荐全注解方式 给容器中添加组件（参考配置类HelloServiceConfig）
-// @ImportResource(locations = "classpath:beans.xml")
+@ImportResource(locations = "classpath:beans.xml")
 @SpringBootApplication
 public class Springboot01Application {
 
